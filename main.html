@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- 
+<b> - Bold text
+<strong> - Important text
+<i> - Italic text
+<em> - Emphasized text
+<mark> - Marked text
+<small> - Smaller text
+<del> - Deleted text
+<ins> - Inserted text
+<sub> - Subscript text
+<sup> - Superscript text -->
+
+ <!-- <img src="url" alt="alternatetext"> -->
+    
+<html lang="en-US" data-predefined-style="true" data-css-presets="true" data-css-preset data-typography-preset>
+    <head>
+        <title> LJ's website </title>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+        <!-- create favicon on favicon.cc -->
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <meta name="author" content="Lyna Jiang">
+        <meta name="description" content="Lyna Jiang's website">
+        <meta name="keyboards" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="cursor"></div>
+        <nav>
+            <h1> Dev Ed</h1>
+            <u1 class="nav-links"> 
+                <li>Home</li>
+                <li>Contact</li>
+                <li>Projects</li>
+                <li>Calendar</li>
+            </u1>
+        </nav>
+
+        <!-- <div class="cursor-outer"></div>
+        <div class="cursor-inner"></div> -->
+
+        <h1> My first JavaScript</h1>
+        <a href="#">Hover Me</a>
+        <button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()"> 
+        Click me to display date and time.
+        </button>
+        <p id="demo"></p>
+
+        <p id="test"></p>
+
+        <script>
+            document.getElementById("test").innerHTML = "Hello JavaScript!";
+        </script>
+        <br>
+        <a href="#bonnie"> Jump to Bonnie</a> 
+        <!-- <picture>
+            <source media="(min-width: 650px)" srcset="img_food.jpg">
+            <source media="(min-width: 465px)" srcset="img_car.jpg">
+            <img src="img_girl.jpg" style="width:auto;">
+          </picture> -->
+
+        <h1 style="background-color:blanchedalmond;font-size:60px;">
+            One heading
+        </h1>
+        <p title="I'm a tooltip"; style="color:rgb(102, 102, 255)";>
+            Paragraph
+        </p>
+        <p> This is a <br> paragraph</p>
+
+        <!-- <a href="default.asp">
+            <img src = "smiley.gif" alt="HTML tutorial">
+        </a> -->
+
+        <hr>
+        <h2 id="bonnie"> Bonnie</h2>
+
+        <img src="hi.jpg" alt="hi">
+
+        <pre><span class="react2">
+            My bonnie lies over the ocean.
+            My bonnie lies over the sea.
+        </span>
+        </pre>
+        <hr>
+        <!-- <script> 
+            const cursor = document.querySelector('.cursor');
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top = e.clientY + 'px';
+            })
+        </script> -->
+        <!-- <script>
+            const cursor = document.querySelector('.cursor');
+            document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            })
+        </script> -->
+        <script src='./cursor.js'></script>
+    </body>
+</html>

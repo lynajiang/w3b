@@ -1,32 +1,41 @@
 /* @import url('https://fonts.googleapis.comcss2?family=Quicksand:wght@300;400;500;600;700&display=swap'); */
 
 * {
-    /* cursor: none; */
+    cursor: none !important;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    cursor: none;
+    /* cursor: none; */
     /* font-family: 'Quicksand', sans-serif; */
   }
   
   body {
-    font-family: "Quicksand", sans-serif;
+    font-family: "Heebo", sans-serif;
+    /* cursor: none; */
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    margin-left: 5rem;
+  }
+
+  a:hover {
+    color: white;
   }
   
-  .fancy {
-    color: blue;
-    font-size: 4rem;
-    font-family: sans-serif;
-    text-align: center;
-    line-height: 100vh;
+  h2{
+    font-size: 5rem;
   }
   nav {
     display: flex;
     justify-content: space-between;
+    padding: 1rem 5rem;
     width: 90%;
-    min-height: 10vh;
+    /* min-height: 10vh; */
     align-items: center;
-    margin: auto;
+    margin:auto;
+
   }
 
   .nav-links {
@@ -43,7 +52,46 @@
     flex: 1
   }
 
-  .cursor{
+  .fancy {
+    color: blue;
+    /* font-size: 4rem; */
+    font-family: sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(6);
+    /* line-height: 100vh; */
+  }
+  /* .fancy:hover {
+    color:antiquewhite;
+    z-index: -1;
+  } */
+
+  .home {
+    height: 100vh;
+  }
+  .first-page {
+    height: 100vh;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .first-page img{
+    height: 100%;
+  }
+  .second-page {
+    height: 100vh;
+    background: blue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+   .cursor{
     width: 3rem;
     height: 3rem;
     border: 2px solid black;
@@ -56,9 +104,19 @@
     transform-origin: 100% 100%;
     z-index: -1;
     backdrop-filter: grayscale();
-  }
+    mix-blend-mode: difference;
+    background: #f1f1f1;
+  } 
+
+
+
   
   .link-grow{
+    transform: scale(2);
+    background: black;
+  }
+
+  .fancy-grow{
     transform: scale(2);
     background: black;
   }
@@ -67,7 +125,10 @@
     color:white;
   }
 
-  //fading title
+  .hovered-fancy{
+    color:white;
+  }
+
   .front-cover img{
     position: relative;
     z-index: -3;
@@ -81,4 +142,3 @@
     color: rgb(255, 83, 3);
   }
 
-  

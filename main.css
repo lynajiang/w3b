@@ -11,7 +11,17 @@
   
   body {
     font-family: "Heebo", sans-serif;
-    /* cursor: none; */
+    cursor: none;
+  }
+
+  body:hover {
+    cursor: none;
+    color:white;
+    pointer-events: none;
+  }
+
+  img {
+    cursor: none;
   }
 
   a {
@@ -23,6 +33,11 @@
   a:hover {
     color: white;
   }
+
+  /* [data-predefined-style="true"] bodycopy a:hover {
+	color: rgba(187, 187, 187, 1);
+} */
+
   
   h2{
     font-size: 5rem;
@@ -104,20 +119,18 @@
     transform-origin: 100% 100%;
     z-index: -1;
     backdrop-filter: grayscale();
-    mix-blend-mode: difference;
-    background: #f1f1f1;
+    /* mix-blend-mode: difference; */
+    /* background: white; */
   } 
-
-
 
   
   .link-grow{
-    transform: scale(2);
+    /* transform: scale(2); */
     background: black;
   }
 
   .fancy-grow{
-    transform: scale(2);
+    /* transform: scale(2); */
     background: black;
   }
   
@@ -142,3 +155,5 @@
     color: rgb(255, 83, 3);
   }
 
+
+  
